@@ -1,26 +1,65 @@
-<section id="forms">
-    <div class="container">
-        <div id="download">
-            <h2>Stay Updated</h2>
-            <form action="/subscribe" method="post">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-        <div id="join">
-            <h2>Join ClubConnect</h2>
-            <form action="/join" method="post">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
-                <label for="venue">Venue Name</label>
-                <input type="text" id="venue" name="venue" required>
-                <label for="location">Location</label>
-                <input type="text" id="location" name="location" required>
-                <button type="submit">Join Now</button>
-            </form>
-        </div>
-    </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClubConnect - Discover and Connect</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="ClubConnect Logo" class="logo">
+        <h1>Welcome to ClubConnect</h1>
+        <p>Discover the best Entertainment and Hospitality venues and connect with amazing experiences.</p>
+    </header>
+    <section id="introduction">
+        <h2>About ClubConnect</h2>
+        <p>ClubConnect is your ultimate Entertainment companion, helping you discover and connect with the best Venues in your area. From seamless transactions, customer
+            engagement, and operational efficiency to seamless check-ins, real-time updates and personalized recommendations, we make your Entertainment and Hospitality expirience unforgettable.</p>
+    </section>
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>User authentication (sign up, log in)</li>
+            <li>Scan-to-pay feature</li>
+            <li>In-app tipping and song requests</li>
+            <li>Venue discovery using mobile location services</li>
+            <li>Proximity-based notifications</li>
+            <li>Customizable user interface</li>
+            <li>Real-time club availability information</li>
+            <li>Smart recommendations</li>
+            <li>Check-ins, payments, virtual queues, and reservations</li>
+        </ul>
+    </section>
+    <section id="testimonials">
+        <h2>What Our Users Say</h2>
+        <blockquote>
+            "ClubConnect completely transformed my entertainment expirience. The real-time updates and personalized recommendations are spot on!" - Sarah J.
+        </blockquote>
+        <blockquote>
+            "I love the scan-to-pay feature and the ability to tip staff directly from the app. It's so convenient!" - Michael B.
+        </blockquote>
+    </section>
+    <section id="cta">
+        <h2>Join the ClubConnect Community</h2>
+        <p>Don't miss out on the best entertainment experiences. Sign up now and start exploring!</p>
+        <button onclick="document.getElementById('signup-form').scrollIntoView()">Get Started</button>
+    </section>
+    <section id="signup">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 ClubConnect. All rights reserved.</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

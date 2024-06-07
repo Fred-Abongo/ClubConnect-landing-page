@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+#introduction, #features, #testimonial, #cta, #signup {
+    padding: 20px;
+    background-color: white;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 10px;
+}
+#introduction h2, #features h2, #testimonial h2, #cta h2, #signup h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+#features ul {
+    list-style: none;
+    padding: 0;
+}
+#features li {
+    background-color: #eaeaea;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+#testimonial blockquote {
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 10px;
+    font-style: italic;
+    margin: 0;
+}
+#testimonial cite {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 1em;
+}
+#cta button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.5em;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#signup-form {
+    display: flex;
+    flex-direction: column;
+}
+#signup-form label {
+    margin: 10px 0 5px;
+}
+#signup-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+#signup-form button {
+    padding: 15px;
+    font-size: 1.5em;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

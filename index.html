@@ -5,65 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClubConnect - Discover and Connect</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.2em;
-        }
-        #features {
-            padding: 20px;
-            background-color: white;
-        }
-        #features h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
-        #features ul {
-            list-style: none;
-            padding: 0;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        #features li {
-            background-color: #eaeaea;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 1.2em;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
 </head>
 <body>
     <header>
         <h1>Welcome to ClubConnect</h1>
         <p>Discover the best Entertainment/Hospitality Venues and connect with amazing experiences.</p>
     </header>
+
+    <section id="introduction">
+        <h2>What is ClubConnect?</h2>
+        <p>ClubConnect is your gateway to the best entertainment and hospitality experiences. From discovering new venues to making seamless payments, ClubConnect has you covered.</p>
+    </section>
+
     <section id="features">
         <h2>Features</h2>
         <ul>
@@ -78,8 +31,37 @@
             <li>Check-ins, payments, virtual queues, and reservations</li>
         </ul>
     </section>
+
+    <section id="testimonial">
+        <h2>What Our Users Say</h2>
+        <blockquote>
+            <p>"ClubConnect made my entertainment expirience so much smoother and more enjoyable. I could find and pay for everything I needed in one app!"</p>
+            <cite>- Happy User</cite>
+        </blockquote>
+    </section>
+
+    <section id="cta">
+        <h2>Ready to Experience the Best time of yourlife?</h2>
+        <button>Get Started</button>
+    </section>
+
+    <section id="signup">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
     <footer>
         <p>&copy; 2024 ClubConnect. All rights reserved.</p>
     </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
