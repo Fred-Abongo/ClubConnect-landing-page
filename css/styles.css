@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .logo {
+    float: left;
+    margin-left: 20px;
+  }
+  
+  header nav {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  #hero h1 {
+    margin: 0 0 20px;
+    font-size: 2.5em;
+  }
+  
+  #hero p {
+    margin: 0 0 40px;
+    font-size: 1.2em;
+  }
+  
+  #hero .cta-buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #ff5733;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  #features {
+    padding: 60px 0;
+  }
+  
+  #features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .features-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    text-align: center;
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  
+  .feature img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  #how-it-works {
+    background: #f4f4f4;
+    padding: 60px 0;
+  }
+  
+  #how-it-works h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .step {
+    text-align: center;
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  
+  .step img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  #testimonials {
+    padding: 60px 0;
+  }
+  
+  #testimonials h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .testimonials-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial {
+    text-align: center;
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  #contact {
+    background: #f4f4f4;
+    padding: 60px 0;
+  }
+  
+  #contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #contact form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+  }
+  
+  #contact form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #contact form input, #contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #contact form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #contact form button:hover {
+    background: #ff7043;
+  }
+  
+  .contact-info {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  .contact-info .social-media {
+    margin-top: 10px;
+  }
+  
+  .contact-info .social-media a {
+    margin: 0 10px;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  footer .footer-links {
+    margin-bottom: 10px;
+  }
+  
+  footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
