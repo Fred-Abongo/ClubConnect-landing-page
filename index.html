@@ -9,156 +9,584 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
+            line-height: 1.6;
+          }
+          
+          .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+          }
+          
+          header {
+            background: #333;
             color: #fff;
             padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        nav a {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+          }
+          
+          header .logo {
+            float: left;
+            margin-left: 20px;
+          }
+          
+          header nav {
+            float: right;
+            margin-right: 20px;
+          }
+          
+          header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+          
+          header nav ul li {
+            display: inline;
+            margin-left: 20px;
+          }
+          
+          header nav ul li a {
             color: #fff;
             text-decoration: none;
-        }
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-        .features, .how-it-works, .testimonials, .founder, .contact {
-            margin: 20px 0;
-        }
-        .cta-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 20px 0;
-        }
-        .cta-buttons a {
-            display: inline-block;
-            padding: 10px 20px;
+          }
+          
+          #hero {
+            background: url('hero-bg.jpg') no-repeat center center/cover;
             color: #fff;
-            background-color: #007bff;
+            text-align: center;
+            padding: 100px 0;
+          }
+          
+          #hero h1 {
+            margin: 0 0 20px;
+            font-size: 2.5em;
+          }
+          
+          #hero p {
+            margin: 0 0 40px;
+            font-size: 1.2em;
+          }
+          
+          #hero .cta-buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #ff5733;
+            color: #fff;
             text-decoration: none;
             border-radius: 5px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
+          }
+          
+          #features {
+            padding: 60px 0;
+          }
+          
+          #features h2 {
             text-align: center;
-            padding: 10px 0;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-        }
-        .contact-form input, .contact-form textarea {
+            margin-bottom: 40px;
+          }
+          
+          .features-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+          }
+          
+          .feature {
+            text-align: center;
+            width: 45%;
+            margin-bottom: 20px;
+          }
+          
+          .feature img {
+            width: 100px;
+            height: 100px;
+          }
+          
+          #how-it-works {
+            background: #f4f4f4;
+            padding: 60px 0;
+          }
+          
+          #how-it-works h2 {
+            text-align: center;
+            margin-bottom: 40px;
+          }
+          
+          .steps {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+          }
+          
+          .step {
+            text-align: center;
+            width: 45%;
+            margin-bottom: 20px;
+          }
+          
+          .step img {
+            width: 100px;
+            height: 100px;
+          }
+          
+          #testimonials {
+            padding: 60px 0;
+          }
+          
+          #testimonials h2 {
+            text-align: center;
+            margin-bottom: 40px;
+          }
+          
+          .testimonials-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+          }
+          
+          .testimonial {
+            text-align: center;
+            width: 45%;
+            margin-bottom: 20px;
+          }
+          
+          .testimonial img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+          }
+          
+          #contact {
+            background: #f4f4f4;
+            padding: 60px 0;
+          }
+          
+          #contact h2 {
+            text-align: center;
+            margin-bottom: 40px;
+          }
+          
+          #contact form {
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+          }
+          
+          #contact form label {
+            display: block;
+            margin-bottom: 5px;
+          }
+          
+          #contact form input, #contact form textarea {
             width: 100%;
             padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
+            margin-bottom: 20px;
             border: 1px solid #ccc;
-        }
-        .contact-form button {
-            padding: 10px 20px;
-            background-color: #007bff;
+            border-radius: 5px;
+          }
+          
+          #contact form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #ff5733;
             color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-        }
-        .social-icons img {
-            width: 24px;
-            margin: 0 5px;
-        }
-    </style>
+          }
+          
+          #contact form button:hover {
+            background: #ff7043;
+          }
+          
+          .contact-info {
+            text-align: center;
+            margin-top: 20px;
+          }
+          
+          .contact-info p {
+            margin: 5px 0;
+          }
+          
+          .contact-info .social-media {
+            margin-top: 10px;
+          }
+          
+          .contact-info .social-media a {
+            margin: 0 10px;
+          }
+          
+          footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+          }
+          
+          footer .footer-links {
+            margin-bottom: 10px;
+          }
+          
+          footer .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+          }body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+          }
+          
+          .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+          }
+          
+          header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          
+          header .logo {
+            height: 50px;
+          }
+          
+          header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+          }
+          
+          header nav ul li {
+            margin-left: 20px;
+          }
+          
+          header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+          }
+          
+          #hero {
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+          }
+          
+          #hero h1 {
+            margin: 0 0 20px;
+            font-size: 2.5em;
+          }
+          
+          #hero p {
+            margin: 0 0 40px;
+            font-size: 1.2em;
+          }
+          
+          #hero .cta-buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #ff5733;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+          }
+          
+          #hero .cta-buttons a:hover {
+            background: #c70039;
+          }
+          
+          #features, #how-it-works, #testimonials, #founder, #contact {
+            padding: 60px 20px;
+            background: #fff;
+            text-align: center;
+          }
+          
+          #features h2, #how-it-works h2, #testimonials h2, #founder h2, #contact h2 {
+            margin-bottom: 40px;
+            font-size: 2em;
+            color: #333;
+          }
+          
+          .features-grid, .steps, .testimonials-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+          }
+          
+          .feature, .step, .testimonial {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1 1 calc(33.333% - 40px);
+            box-sizing: border-box;
+            max-width: calc(33.333% - 40px);
+          }
+          
+          .feature img, .step img, .testimonial img {
+            max-width: 100%;
+            border-radius: 10px;
+          }
+          
+          .testimonial blockquote {
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+          }
+          
+          .testimonial p {
+            margin: 0;
+            font-weight: bold;
+          }
+          
+          #founder .founder-info {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+          }
+          
+          #founder .founder-info img {
+            max-width: 200px;
+            border-radius: 50%;
+          }
+          
+          #founder .founder-info h3 {
+            margin: 0;
+            font-size: 1.5em;
+          }
+          
+          #contact form {
+            margin-bottom: 40px;
+          }
+          
+          #contact form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+          }
+          
+          #contact form input, #contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          }
+          
+          #contact form button {
+            padding: 10px 20px;
+            background: #ff5733;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+          }
+          
+          #contact form button:hover {
+            background: #c70039;
+          }
+          
+          footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+          }
+          
+          footer .footer-links {
+            margin-bottom: 20px;
+          }
+          
+          footer .footer-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+          }
+          
+          footer p {
+            margin: 0;
+          }
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClubConnect</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
-    <h1>ClubConnect Logo</h1>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#features">Features</a>
-        <a href="#how-it-works">How It Works</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#founder">Founder</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section id="home">
-    <h2>Discover. Connect. Enjoy.</h2>
-    <p>Bridging the Gap for Seamless Payments and Efficient Business Operations.</p>
-    <div class="cta-buttons">
-        <a href="#">Download on the App Store</a>
-        <a href="#">Get it on Google Play</a>
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="ClubConnect Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#founder">Founder</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <img src="clubconnect-app.jpg" alt="ClubConnect App in Use">
-</section>
+  </header>
 
-<section id="features" class="features">
-    <h2>Features</h2>
-    <ul>
-        <li><strong>Scan-to-Pay:</strong> Streamlined and seamless scan-to-pay experience for customers through the implementation of advanced QR code technology with unique process identification pins representing item and venue details in the respective partnered venue.</li>
-        <li><strong>Efficient Inventory Management:</strong> Providing partnered venues with real-time insights into sales and inventory levels through its QR code technology. Enabling venues to accurately track transactions, manage stock levels effectively, and automate re-ordering processes, thereby reducing loss and optimizing operational efficiency.</li>
-        <li><strong>Automated Sales Tracking:</strong> By seamlessly recording transactions through the QR code technology. This automation ensures accurate and real-time tracking of sales within the partnered venues, facilitating efficient accounting, inventory management, and operational decision-making.</li>
-        <li><strong>Real-time Insights and Analytics:</strong> By continuously updating venues with instant data on sales, inventory levels, and customer behavior through its QR code technology, ClubConnect empowers venues to make informed decisions quickly, optimize operations, and enhance customer experiences in real-time.</li>
-    </ul>
-</section>
+  <section id="hero">
+    <div class="container">
+      <h1>Discover. Connect. Enjoy.</h1>
+      <p>Bridging the Gap for Seamless Payments and Efficient Business Operations.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn-app-store">Download on the App Store</a>
+        <a href="#" class="btn-google-play">Get it on Google Play</a>
+      </div>
+      <img src="hero-image.png" alt="ClubConnect App in Use" class="hero-image">
+    </div>
+  </section>
 
-<section id="how-it-works" class="how-it-works">
-    <h2>How It Works</h2>
-    <ol>
-        <li><strong>Download the App:</strong> Get ClubConnect from the App Store or Google Play.</li>
-        <li><strong>Sign Up:</strong> Create your account and set up your profile.</li>
-        <li><strong>Discover Nearby Venues:</strong> Allow location access to retrieve your current location.</li>
-        <li><strong>Scan and Pay:</strong> Scan the Item QR code at the partner venue and pay seamlessly.</li>
-    </ol>
-</section>
+  <section id="features">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <img src="icon1.png" alt="Scan-to-pay">
+          <h3>Scan-to-pay</h3>
+          <p>Streamlined and seamless scan-to-pay experience for customers through the implementation of an advanced QR code technology with unique process identification pin representing item and venue details in the respective partnered venue.</p>
+        </div>
+        <div class="feature">
+          <img src="icon2.png" alt="Efficient Inventory Management">
+          <h3>Efficient Inventory Management</h3>
+          <p>Providing partnered venues with real-time insights into sales and inventory levels through its QR code technology, enabling venues to accurately track transactions, manage stock levels effectively, and automate re-ordering processes, thereby reducing loss and optimizing operational efficiency.</p>
+        </div>
+        <div class="feature">
+          <img src="icon3.png" alt="Automated Sales Tracking">
+          <h3>Automated Sales Tracking</h3>
+          <p>By seamlessly recording transactions through the QR code technology. This automation ensures accurate and real-time tracking of sales within the partnered venues, facilitating efficient accounting, inventory management, and operational decision-making.</p>
+        </div>
+        <div class="feature">
+          <img src="icon4.png" alt="Real-time Insights and Analytics">
+          <h3>Real-time Insights and Analytics</h3>
+          <p>By continuously updating venues with instant data on sales, inventory levels, and customer behavior through its QR code technology, empowers the venues to make informed decisions quickly, optimize operations, and enhance customer experiences in real-time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="testimonials" class="testimonials">
-    <h2>What Our Users Say</h2>
-    <blockquote>
-        <p>"ClubConnect has made my time out so much easier. No more fumbling for cash or cards!" - <strong>Jane Felix, Patron</strong></p>
-    </blockquote>
-    <blockquote>
-        <p>"ClubConnect has transformed the way we manage payments and track sales, eliminating the inefficiencies that often led to discrepancies in sales!" - <strong>John Smith, Venue Manager</strong></p>
-    </blockquote>
-</section>
+  <section id="how-it-works">
+    <div class="container">
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <img src="step1.png" alt="Download the App">
+          <h3>Download the App</h3>
+          <p>Get ClubConnect from the App Store or Google Play.</p>
+        </div>
+        <div class="step">
+          <img src="step2.png" alt="Sign Up">
+          <h3>Sign Up</h3>
+          <p>Create your account and set up your profile.</p>
+        </div>
+        <div class="step">
+          <img src="step3.png" alt="Discover Nearby Venues">
+          <h3>Discover Nearby Partnered Venues</h3>
+          <p>Prompt that allows location access to retrieve the user's current location.</p>
+        </div>
+        <div class="step">
+          <img src="step4.png" alt="Scan and Pay">
+          <h3>Scan and Pay</h3>
+          <p>Scan the Item QR code at the partner venue and pay seamlessly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="founder" class="founder">
-    <h2>Meet Our Founder</h2>
-    <p><strong>Fredrick Onyango Abong'o</strong></p>
-    <p>ClubConnect streamlines operations for venues and elevates the entertainment & hospitality experience for patrons by offering secure, efficient, and engaging solutions. Join us in revolutionizing the way we connect, celebrate, and enjoy through this cutting-edge technology.</p>
-</section>
+  <section id="testimonials">
+    <div class="container">
+      <h2>What Our Users Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <img src="user1.jpg" alt="User 1">
+          <blockquote>"ClubConnect has made my time out so much easier. No more fumbling for cash or cards!"</blockquote>
+          <p>- Jane Felix - Patron</p>
+        </div>
+        <div class="testimonial">
+          <img src="user2.jpg" alt="User 2">
+          <blockquote>"ClubConnect has transformed the way we manage payments and track sales, eliminating the inefficient ways that often amounted to discrepancies in sales!"</blockquote>
+          <p>- John Smith - Venue Manager</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form class="contact-form">
-        <input type="text" name="name" placeholder="Name">
-        <input type="email" name="email" placeholder="Email">
-        <textarea name="message" placeholder="Message"></textarea>
+  <section id="founder">
+    <div class="container">
+      <h2>Meet the Founder</h2>
+      <div class="founder-info">
+        <img src="founder.jpg" alt="Founder Image">
+        <div class="founder-details">
+          <h3>Alex Johnson</h3>
+          <p>Alex Johnson is the visionary behind ClubConnect. With over a decade of experience in the entertainment and hospitality industry, Alex saw the need for a seamless payment and management solution. His passion for innovation and excellence has driven the success of ClubConnect, making it a trusted platform for both patrons and venue owners.</p>
+          <p>Alex holds a degree in Business Administration and has a background in technology and operations management. He is dedicated to continuously improving ClubConnect to meet the evolving needs of its users.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
         <button type="submit">Send</button>
-    </form>
-    <p>Email: <a href="mailto:support@clubconnect.com">support@clubconnect.com</a></p>
-    <p>Phone: +254 742 692 326</p>
-    <div class="social-icons">
-        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+      </form>
+      <div class="contact-info">
+        <p>Email: support@clubconnect.com</p>
+        <p>Phone: +254 742 692 326</p>
+        <div class="social-media">
+          <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+          <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<footer>
-    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-    <p>© 2024 ClubConnect. All rights reserved.</p>
-</footer>
-
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <p>&copy; 2024 ClubConnect. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
